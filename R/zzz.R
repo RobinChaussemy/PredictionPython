@@ -5,7 +5,7 @@
 #'
 #' @import reticulate
 #'
-#' @examples .onLoad(libname, "FootballeuR")
+#' @examples .onLoad(libname, "PredictionPython")
 .onLoad <- function(libname, pkgname) {
-  reticulate::use_virtualenv("../Python/venv")
+  reticulate::use_virtualenv("Python/venv")
 }

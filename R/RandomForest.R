@@ -17,7 +17,7 @@ Int <- function(x){
 #' @examples RandomForest_Python(c("Ama Dablam","Autumn","France","Climber",2025,1,1,1,1,1,1,1), n = 2)
 
 RandomForest_Python <- function(indiv_prediction,n = Int(2)){
-  source_python("../Python/main.py")
+  source_python("Python/main.py")
   RandomForest_result = Tree_Process(data,indiv_prediction,Int(n))
   return(list(prediction = RandomForest_result[[1]], proba_f = RandomForest_result[[2]],proba_s = RandomForest_result[[3]],temps = RandomForest_result[[4]]))
 }
