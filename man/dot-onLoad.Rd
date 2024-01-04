@@ -14,6 +14,3 @@
 \description{
 Add a path to the shiny app
 }
-\examples{
-.onLoad(libname, "FootballeuR")
-}

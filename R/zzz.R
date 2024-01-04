@@ -5,7 +5,13 @@
 #'
 #' @import reticulate
 #'
-#' @examples .onLoad(libname, "PredictionPython")
 .onLoad <- function(libname, pkgname) {
-  reticulate::use_virtualenv("Python/venv")
+  tryCatch(
+    {
+      reticulate::use_virtualenv("Python/venv")
+    },error=function(e) {
+      reticulate::use_virtualenv("../Python/venv")
+    }
+  )
+
 }
