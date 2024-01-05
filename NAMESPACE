@@ -2,6 +2,5 @@
 
 export(KNN_Python)
 export(RandomForest_Python)
-import(reticulate)
 importFrom(reticulate,source_python)
 importFrom(reticulate,use_virtualenv)
